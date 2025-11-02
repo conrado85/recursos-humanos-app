@@ -35,3 +35,63 @@ El objetivo del proyecto es ofrecer una herramienta moderna y eficiente para peq
 
 ## 📁 Estructura del proyecto
 
+
+
+```recursos-humanos/
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── context/
+│ │ ├── pages/
+│ │ ├── routes/
+│ │ ├── services/
+│ │ └── App.tsx
+│ └── index.html
+│
+└── backend/
+├── src/
+│ ├── controllers/
+│ ├── routes/
+│ ├── models/
+│ ├── config/
+│ └── index.ts
+└── .env
+```
+
+
+
+---
+
+## 🚀 Instalación y ejecución
+
+### 🔹 1. Clonar el repositorio
+```bash
+git clone https://github.com/tuusuario/recursos-humanos-app.git
+cd recursos-humanos-app
+```
+
+### 🔹 2. Instalar dependencias.
+-- En la carpeta `frontend`
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+-- En la carpeta `backend`
+
+```
+cd ../backend
+npm install
+npm run dev
+```
+
+| Método | Ruta             | Descripción                         |
+| ------ | ---------------- | ----------------------------------- |
+| GET    | `/api/empleados` | Obtener todos los empleados         |
+| POST   | `/api/empleados` | Crear un nuevo empleado             |
+| GET    | `/api/stock`     | Obtener lista de productos por lote |
+| GET    | `/api/tareas`    | Consultar tareas registradas        |
+
